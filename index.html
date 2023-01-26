@@ -9,80 +9,130 @@
     </head>
     <body>
         <div class="container">
-            <img src="images/StatusBar.png">
-            <div class="header-bar">
-                
-            </div>
+            <img src="images/clouds.png" class="clouds-bg">
+            <img src="images/StatusBar.png" class="status-bar">
             <div class="section-1">
-                <h3>Philadelphia</h3>
-                <div class="section-1-inner">
-                    <div class="heading-temp">
-                        <h4>Low</h4>
-                        <h2>1&#176</h2>
+                <div class="tool-bar">
+                    <div class="left-wrapper">
+                        <button>Edit</button>
+                        <button>+</button>
                     </div>
-                    <h1>3&#176</h1>
-                    <div class="heading-temp">
-                        <h4>High</h4>
-                        <h2>4&#176</h2>
+                    <div class="right-wrapper">
+                        <button>D</button>
+                        <button>W</button>
+                        <button>M</button>
                     </div>
                 </div>
-                <h4>Cloudy | Feels Like: 2&#176</h4>
+                <div class="location-title">
+                    <h3>Philadelphia</h3>
+                </div>
+                <div class="section-1-inner">
+                    <div class="heading-temp">
+                        <div class="subtitle-div"> 
+                            <h4>Low</h4>
+                        </div>
+                        <div class="temp-div">
+                            <h2>1&#176</h2>
+                        </div>
+                    </div>
+                    <div class="h1-wrapper">
+                        <h1>3&#176</h1>
+                    </div>
+                    <div class="heading-temp">
+                        <div class="subtitle-div">
+                            <h4>High</h4>
+                        </div>
+                        <div class="temp-div">
+                            <h2>4&#176</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-subtitle">
+                    <h4>Cloudy | Feels Like: 2&#176</h4>
+                </div>
             </div>
             <div class="section-2">
-                <div class="heading-temp">
+                <div class="timeline">
                     <h4>9AM</h4>
                     <div class="line"></div>
                     <img src="images/material-symbols_sunny-rounded.png" class="icon">
                     <h4>3&#176</h4>
                 </div>
-                <div class="heading-temp">
+                <div class="timeline">
                     <h4>10AM</h4>
                     <div class="line"></div>
                     <img src="images/material-symbols_sunny-rounded.png" class="icon">
                     <h4>3&#176</h4>
                 </div>
-                <div class="heading-temp">
+                <div class="timeline">
                     <h4>11AM</h4>
                     <div class="line"></div>
                     <img src="images/material-symbols_partly-cloudy-day-rounded.png" class="icon">
                     <h4>2&#176</h4>
                 </div>
-                <div class="heading-temp">
+                <div class="timeline">
                     <h4>12PM</h4>
                     <div class="line"></div>
                     <img src="images/material-symbols_partly-cloudy-day-rounded.png" class="icon">
                     <h4>2&#176</h4>
                 </div>
-                <div class="heading-temp">
+                <div class="timeline">
                     <h4>1PM</h4>
                     <div class="line"></div>
-                    <img src="images/material-symbols_rainy.png" class="icon">
+                    <img src="images/material-symbols_rainy_small.png" class="icon">
                     <h4>2&#176</h4>
                 </div>
-                <div class="heading-temp">
+                <div class="timeline">
                     <h4>2PM</h4>
                     <div class="line"></div>
-                    <img src="images/material-symbols_rainy.png" class="icon">
+                    <img src="images/material-symbols_rainy_small.png" class="icon">
                     <h4>2&#176</h4>
+                </div>
+                <div class="addms">
+                    <div class="calendar-wrapper">
+                        <img src="images/sunglasses.png" class="sunglasses">
+                        <h4>ADDMS</h4>
+                    </div>
+                    <h5>34th St, Walnut</h5>
+                    <h5>10:15AM-12:15PM</h5>
+                </div>
+                <div class="towne">
+                    <div class="calendar-wrapper">
+                        <img src="images/umbrella.png" class="umbrella">
+                        <h4>TOWNE</h4>
+                    </div>
+                    <h5>32th St, Locust</h5>
+                    <h5>1:15PM-3:15PM</h5>
                 </div>
             </div>
             <div class="section-3">
                 <div class="grid-item-1">
+                    <img src="images/mingcute_sunset-fill.png" class="bg1">
                     <h4>Gets Dark</h4>
-                    <h2>5:12PM</h2>
+                    <h2><div id="time">5:12 PM</div></h2>
                 </div>
                 <div class="grid-item-2">
-                    <h4>UV Index</h4>
-                    <h2>1</h2>
-                    <h5>Low</h5>
+                    <div class="grid-2-wrapper">
+                        <h4>UV Index</h4>
+                        <h2><div id="UV">1</div></h2>
+                        <h5>Low</h5>
+                        <img src="images/uv-line.png" class="uv-line">
+                        <h5>Wear sunscreen!</h5>
+                    </div>
                 </div>
                 <div class="grid-item-3">
                     <h4>Rain</h4>
-                    <img src="images/material-symbols_rainy_big.png">
+                    <img src="images/material-symbols_rainy.png" class="rainy-bg">
+                    <div class="starts-wrapper"><h4>Starts 3:35PM</h4></div>
                 </div>
                 <div class="grid-item-4">
                     <h4>Next Sunny Day</h4>
-                    <img src="images/warmer.png">
+                    <img src="images/warmer.png" class="warmer">
+                    <div class="warmer-labels">
+                        <h5><div id="blue">Feb 8</div></h5>
+                        <h5><div id="blue">Feb 9</div></h5>
+                        <h5><div id="blue">Feb 10</div></h5>
+                    </div>
                 </div>
             </div>
         </div>

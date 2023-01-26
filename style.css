@@ -7,15 +7,26 @@ body {
     border-radius: 20px;
 }
 
+.clouds-bg {
+    position: absolute;
+    margin-top: 150px;
+    width: 450px;
+}
+
 h1 {
     font-size: 100px;
+    line-height: 110px;
     font-weight: 100;
-    line-height: 120px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h2 {
     font-size: 48px;
     font-weight: 100;
+    line-height: 56px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h3 {
@@ -23,15 +34,26 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     line-height: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h4 {
     font-size: 16px;
     text-transform: uppercase;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h5 {
+    font-size: 14px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 p {
     font-size: 14px;
+    font-weight: 500;
 }
 
 .container {
@@ -43,10 +65,14 @@ p {
     align-items: center;
 }
 
+.status-bar {
+    width: 100%;
+}
+
 .line {
     background:rgb(255,255,255, .3);
     width: 2px;
-    height: 77px;
+    height: 95px;
     margin: 5px;
 }
 
@@ -57,21 +83,67 @@ p {
 
 .section-1 {
     width: 100%;
-    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: rgb(255,255,255, .7);
+    color:#135CA1;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 0px;
+    margin: 3px 2px;
+    padding: 5px 16px;
+}
+
+.tool-bar {
+    margin: 10px 0px;
+    width: 100%;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .section-1-inner {
-    padding: 0px 30px;
+    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+.location-title {
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
 .heading-temp {
+    width: 50px;
+}
+
+.subtitle-div {
+    margin-top: 20px;
+}
+
+.lower-subtitle {
+    margin: 0px;
+}
+
+.temp-div {
+    height: 50px;
+    margin: 0px;
+}
+
+.h1-wrapper {
+    margin: 0px;
+}
+
+.timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,6 +155,45 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+}
+
+.calendar-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.addms {
+    background:rgb(255,255,255, .8);
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    color:#135CA1;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -5px;
+}
+
+.towne {
+    background:rgb(255,255,255, .8);
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    color:#135CA1;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 335px;
+}
+
+.sunglasses {
+    width: 19px;
+}
+
+.umbrella {
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
 }
 
 .section-3 {
@@ -90,11 +201,11 @@ p {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 160px 160px;
     grid-template-rows: 1fr 1fr;
     column-gap: 16px;
     row-gap: 16px;
-    margin: 5px;
+    margin: 20px;
 }
 
 .grid-item-1 {
@@ -102,7 +213,27 @@ p {
     grid-row: 1;
     background: rgb(255,255,255, .8);
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px;
+    position: relative;
+}
+
+.bg1 {
+    height: 145px;
+    position: absolute;
+}
+
+#time {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 36px;
+    color: #347FC5;
+    z-index: 1;
+}
+
+#UV {
+    margin-top: 10px;
+    color:#347FC5;
+    font-size: 56px;
 }
 
 .grid-item-2 {
@@ -112,7 +243,15 @@ p {
     flex-direction: column;
     background: rgb(255,255,255, .8);
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px;
+}
+
+.grid-2-wrapper {
+    margin-left: 5px;
+}
+
+.uv-line {
+    margin: 5px 0px;
 }
 
 .grid-item-3 {
@@ -120,7 +259,18 @@ p {
     grid-row: 2;
     background: rgb(255,255,255, .8);
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px;
+}
+
+.rainy-bg {
+    height: 78px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.starts-wrapper {
+    margin-left: 15px;
+    color:#135CA1;
 }
 
 .grid-item-4 {
@@ -128,5 +278,21 @@ p {
     grid-row: 2;
     background: rgb(255,255,255, .8);
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px;
+}
+
+.warmer {
+    width: 163px;
+    margin-left: -13px;
+}
+
+.warmer-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#blue {
+    color:#347FC5;
+    font-weight: 700;
 }
