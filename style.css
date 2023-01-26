@@ -1,3 +1,85 @@
-#grad {
-    background-image: linear-gradient(#5EABF2, #B0D2F2);
+body {
+    margin: 0;
+    font-family: Source Sans Pro;
+    color: white;
+    width: 390px;
+    height: 844px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 100;
+    line-height: 120px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 56px;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+}
+
+.container {
+    background-image: linear-gradient(rgb(59, 177, 245), rgb(59, 177, 245, .5));
+    padding: 0px 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    background:rgb(255,255,255, .3);
+    width: 2px;
+    height: 77px;
+    margin: 5px;
+}
+
+.icon {
+    height: 38px;
+    width: 38px;
+}
+
+.section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-1-inner {
+    padding: 0px 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.heading-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
